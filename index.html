@@ -20,7 +20,7 @@
                 <h1 class="text-4xl md:text-5xl font-black tracking-tight mt-3">Prajwal V M</h1>
                 <p class="text-xl md:text-2xl text-blue-200 mt-2 font-medium">Azure Data Engineer</p>
                 <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-300 mt-4">
-                    <span class="flex items-center"><i class="fas fa-map-marker-alt text-blue-400 mr-2"></i>Bangalore, India (Open to UAE & GCC Relocation)</span>
+                    <span class="flex items-center"><i class="fas fa-map-marker-alt text-blue-400 mr-2"></i>Bangalore, India</span>
                 </div>
             </div>
             <!-- Quick Contact Badges -->
@@ -41,64 +41,87 @@
                 <i class="fas fa-user-tie text-blue-600"></i> Professional Profile
             </h2>
             <p class="text-slate-600 leading-relaxed text-base">
-                Dynamic IT professional with <strong>4+ years of experience</strong> specializing in data integration within Azure environments. Highly proficient in designing and developing robust Extract, Transform, Load (ETL) processes across diverse data architecture frameworks. Adept at metadata management, pipeline orchestration optimization, master data alignment, and collaborating closely with cross-functional global teams to deliver business value through scalable data models.
+                Dynamic IT professional with <strong>4+ years of experience</strong> specializing in data integration within Azure environments[cite: 1]. Highly proficient in designing and developing robust Extract, Transform, Load (ETL) processes across diverse data architecture frameworks[cite: 1]. Adept at metadata management, pipeline orchestration optimization, master data alignment, and collaborating closely with cross-functional global teams to deliver business value through scalable data models[cite: 1].
             </p>
         </section>
 
-        <!-- NEW VISUAL PROJECT ARCHITECTURE SECTION (From D65F3328-7EAD-4CFA-9836-D0989CC86372.PNG) -->
+        <!-- VISUAL NATIVE PROJECT ARCHITECTURE DIAGRAM SECTION -->
         <section class="space-y-4">
             <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-3 border-b border-slate-100 pb-4">
-                <i class="fas fa-project-diagram text-blue-600"></i> Featured Architecture Project
+                <i class="fas fa-project-diagram text-blue-600"></i> Featured Pipeline Architecture
             </h2>
-            <div class="bg-slate-900 text-slate-100 p-6 md:p-8 rounded-2xl shadow-lg border border-slate-800 space-y-6">
+            <div class="bg-slate-950 text-slate-100 p-6 md:p-8 rounded-2xl shadow-lg border border-slate-800 space-y-8">
                 <div>
-                    <span class="text-xs font-mono text-blue-400 tracking-wider uppercase block">Speridian Technologies Production Pipeline</span>
+                    <span class="text-xs font-mono text-blue-400 tracking-wider uppercase block">Blueprint Ref: D65F3328-7EAD-4CFA-9836-D0989CC86372.PNG</span>
                     <h3 class="text-xl md:text-2xl font-bold text-white mt-1">eTRAKiT to Salesforce — Data Migration Architecture</h3>
-                    <p class="text-sm text-slate-400 mt-2">Design summary based on pipeline blueprint file <strong>D65F3328-7EAD-4CFA-9836-D0989CC86372.PNG</strong>[cite: 1]. An on-premise to Azure Cloud orchestration layer deploying metadata-driven pipelines, delta loads, and automated record linking[cite: 1].</p>
+                    <p class="text-sm text-slate-400 mt-2">Natively rendered pipeline workflow showcasing on-premise extraction to Azure cloud layers, detailing automated bulk integration mapping structures[cite: 1].</p>
                 </div>
 
-                <!-- Interactive Architecture Grid Layout -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs font-sans mt-4">
-                    <!-- Step 1: Sources -->
-                    <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/50 space-y-3">
-                        <div class="text-blue-400 font-bold uppercase tracking-wider flex items-center gap-2">
-                            <span class="w-2 h-2 rounded-full bg-blue-400"></span> 1. Source Environment
+                <!-- Complete Native Architecture Map UI -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
+                    
+                    <!-- Box 1: Sources -->
+                    <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 space-y-4 relative">
+                        <div class="text-blue-400 font-bold uppercase tracking-wider text-xs flex items-center gap-2">
+                            <i class="fas fa-hdd"></i> On-Premises Environment
                         </div>
-                        <ul class="space-y-2 text-slate-300">
-                            <li class="bg-slate-900/40 p-2 rounded"><strong class="text-white block">Microsoft SQL Server:</strong> Accounts, Permits, Financial Data[cite: 1]</li>
-                            <li class="bg-slate-900/40 p-2 rounded"><strong class="text-white block">GIS Database:</strong> Maps, Spatial Layers, Parcels[cite: 1]</li>
-                            <li class="bg-slate-900/40 p-2 rounded"><strong class="text-white block">Laserfiche API:</strong> Raw Document Metadata extraction[cite: 1]</li>
-                        </ul>
+                        <div class="space-y-2 text-xs">
+                            <div class="bg-slate-950 p-2.5 rounded border border-slate-800/80">
+                                <span class="font-bold text-white block"><i class="fas fa-database text-blue-500 mr-1.5"></i> Core Relational DB</span>
+                                <span class="text-slate-400 text-[11px]">SQL Server (Permits, Accounts, Finances)[cite: 1]</span>
+                            </div>
+                            <div class="bg-slate-950 p-2.5 rounded border border-slate-800/80">
+                                <span class="font-bold text-white block"><i class="fas fa-earth-americas text-emerald-500 mr-1.5"></i> City GIS Map DB</span>
+                                <span class="text-slate-400 text-[11px]">Spatial Layers & Parcels Data[cite: 1]</span>
+                            </div>
+                            <div class="bg-slate-950 p-2.5 rounded border border-slate-800/80">
+                                <span class="font-bold text-white block"><i class="fas fa-file-invoice text-orange-500 mr-1.5"></i> Laserfiche Repository</span>
+                                <span class="text-slate-400 text-[11px]">Document Metadata Processing[cite: 1]</span>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Step 2: Ingestion & Staging -->
-                    <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/50 space-y-3">
-                        <div class="text-indigo-400 font-bold uppercase tracking-wider flex items-center gap-2">
-                            <span class="w-2 h-2 rounded-full bg-indigo-400"></span> 2. Azure Cloud Core
+                    <!-- Box 2: Cloud Compute -->
+                    <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 space-y-4 relative">
+                        <div class="text-indigo-400 font-bold uppercase tracking-wider text-xs flex items-center gap-2">
+                            <i class="fas fa-cloud"></i> Azure Cloud Layer
                         </div>
-                        <ul class="space-y-2 text-slate-300">
-                            <li class="bg-slate-900/40 p-2 rounded"><strong class="text-indigo-300 block"><i class="fas fa-route mr-1"></i> Ingestion (ADF):</strong> Parameterized metadata-driven pipelines utilizing control flow logging tables[cite: 1].</li>
-                            <li class="bg-slate-900/40 p-2 rounded"><strong class="text-indigo-300 block"><i class="fas fa-database mr-1"></i> Medallion Staging:</strong> Azure SQL DB handling Raw/Standardized tables and Stored Procedures per object layer[cite: 1].</li>
-                        </ul>
+                        <div class="space-y-2 text-xs">
+                            <div class="bg-indigo-950/40 p-2.5 rounded border border-indigo-900/60">
+                                <span class="font-bold text-indigo-300 block"><i class="fas fa-shuffle text-indigo-400 mr-1.5"></i> Ingestion (ADF)</span>
+                                <span class="text-slate-400 text-[11px]">Metadata Driven Parameterized Pipelines[cite: 1]</span>
+                            </div>
+                            <div class="bg-indigo-950/40 p-2.5 rounded border border-indigo-900/60">
+                                <span class="font-bold text-indigo-300 block"><i class="fas fa-cubes text-indigo-400 mr-1.5"></i> Staging (Azure SQL)</span>
+                                <span class="text-slate-400 text-[11px]">Medallion Architecture & Stored Procedures[cite: 1]</span>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Step 3: Target Load Layer -->
-                    <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/50 space-y-3">
-                        <div class="text-emerald-400 font-bold uppercase tracking-wider flex items-center gap-2">
-                            <span class="w-2 h-2 rounded-full bg-emerald-400"></span> 3. Salesforce Target & Backup
+                    <!-- Box 3: Target Layer -->
+                    <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 space-y-4 relative">
+                        <div class="text-emerald-400 font-bold uppercase tracking-wider text-xs flex items-center gap-2">
+                            <i class="fas fa-circle-check"></i> Target Environment
                         </div>
-                        <ul class="space-y-2 text-slate-300">
-                            <li class="bg-slate-900/40 p-2 rounded"><strong class="text-emerald-300 block"><i class="fas fa-cloud-upload-alt mr-1"></i> Load Phase (ADF):</strong> Triggering Bulk/REST APIs with custom Upsert logic[cite: 1].</li>
-                            <li class="bg-slate-900/40 p-2 rounded"><strong class="text-emerald-300 block"><i class="fas fa-history mr-1"></i> Delta Load Process:</strong> Automated comparison tracking using source audit logs for instant synchronization[cite: 1].</li>
-                        </ul>
+                        <div class="space-y-2 text-xs">
+                            <div class="bg-emerald-950/40 p-2.5 rounded border border-emerald-900/60">
+                                <span class="font-bold text-emerald-300 block"><i class="fab fa-salesforce text-sky-400 mr-1.5"></i> Salesforce Cloud</span>
+                                <span class="text-slate-400 text-[11px]">Accounts, Contacts, and Linked Docs[cite: 1]</span>
+                            </div>
+                            <div class="bg-emerald-950/40 p-2.5 rounded border border-emerald-900/60">
+                                <span class="font-bold text-emerald-300 block"><i class="fas fa-rotate text-emerald-400 mr-1.5"></i> Delta Load Process</span>
+                                <span class="text-slate-400 text-[11px]">Automated Audit Table Tracking Comparison[cite: 1]</span>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
 
-                <!-- Footer Feature tags matching image legend -->
-                <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/60 text-[11px] font-mono text-slate-400">
-                    <span class="bg-slate-900 px-2 py-1 rounded border border-slate-800"><i class="fas fa-check-circle text-blue-500 mr-1"></i> Metadata-Driven</span>
-                    <span class="bg-slate-900 px-2 py-1 rounded border border-slate-800"><i class="fas fa-sync text-indigo-500 mr-1"></i> Delta Load</span>
-                    <span class="bg-slate-900 px-2 py-1 rounded border border-slate-800"><i class="fas fa-shield-alt text-emerald-500 mr-1"></i> Secure via Azure AD</span>
+                <!-- Legend / Architecture Indicators -->
+                <div class="flex flex-wrap gap-3 pt-4 border-t border-slate-900 text-xs text-slate-400 font-mono">
+                    <span class="flex items-center gap-1.5"><span class="w-2.5 h-0.5 bg-blue-500 inline-block"></span> Data Flow</span>
+                    <span class="flex items-center gap-1.5"><span class="w-2.5 h-0.5 bg-indigo-500 inline-block"></span> Control Metadata Flow</span>
+                    <span class="flex items-center gap-1.5"><span class="w-2.5 h-0.5 bg-emerald-500 inline-block"></span> Delta Comparison Flow</span>
                 </div>
             </div>
         </section>
@@ -113,40 +136,40 @@
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
                     <h3 class="font-bold text-slate-900 text-lg mb-3 flex items-center"><i class="fas fa-route text-indigo-500 mr-2"></i>Data Pipeline & Orchestration</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Azure Data Factory</span>
-                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Microsoft Fabric</span>
-                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Azure Event Grid</span>
-                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Azure Logic Apps</span>
+                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Azure Data Factory[cite: 1]</span>
+                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Microsoft Fabric[cite: 1]</span>
+                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Azure Event Grid[cite: 1]</span>
+                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Azure Logic Apps[cite: 1]</span>
                     </div>
                 </div>
 
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
                     <h3 class="font-bold text-slate-900 text-lg mb-3 flex items-center"><i class="fas fa-bolt text-amber-500 mr-2"></i>Data Processing & Analytics</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Databricks</span>
-                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Apache Spark</span>
-                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">PySpark</span>
-                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Python</span>
+                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Databricks[cite: 1]</span>
+                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Apache Spark[cite: 1]</span>
+                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">PySpark[cite: 1]</span>
+                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Python[cite: 1]</span>
                     </div>
                 </div>
 
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
                     <h3 class="font-bold text-slate-900 text-lg mb-3 flex items-center"><i class="fas fa-database text-emerald-500 mr-2"></i>Database & Cloud Storage</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Azure SQL Database</span>
-                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Oracle Database</span>
-                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">ADLS Gen2</span>
-                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Delta Lake / One Lake</span>
+                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Azure SQL Database[cite: 1]</span>
+                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Oracle Database[cite: 1]</span>
+                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">ADLS Gen2[cite: 1]</span>
+                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Delta Lake / One Lake[cite: 1]</span>
                     </div>
                 </div>
 
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
                     <h3 class="font-bold text-slate-900 text-lg mb-3 flex items-center"><i class="fas fa-shield-halved text-blue-500 mr-2"></i>Governance & Quality</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Ataccama ONE</span>
-                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Data Quality Management</span>
-                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Metadata Management</span>
-                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Master Data (MDM)</span>
+                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Ataccama ONE[cite: 1]</span>
+                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Data Quality Management[cite: 1]</span>
+                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Metadata Management[cite: 1]</span>
+                        <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Master Data (MDM)[cite: 1]</span>
                     </div>
                 </div>
 
@@ -217,52 +240,52 @@
             </h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 <div class="bg-white p-4 rounded-xl border border-slate-200/60 flex items-center gap-3">
-                    <i class="fab fa-windows text-blue-500 text-xl"></i>
+                    <i class="fas fa-cubes text-blue-500 text-xl"></i>
                     <div>
                         <p class="text-sm font-bold text-slate-900">AZ-900</p>
                         <p class="text-xs text-slate-500">Azure Fundamentals[cite: 1]</p>
                     </div>
                 </div>
                 <div class="bg-white p-4 rounded-xl border border-slate-200/60 flex items-center gap-3">
-                    <i class="fab fa-windows text-blue-500 text-xl"></i>
+                    <i class="fas fa-cubes text-blue-500 text-xl"></i>
                     <div>
                         <p class="text-sm font-bold text-slate-900">DP-900</p>
                         <p class="text-xs text-slate-500">Azure Data Fundamentals[cite: 1]</p>
                     </div>
                 </div>
-                <!-- Databricks Grouped Badges (Unified Databricks Hub Icon Configuration) -->
+                <!-- Databricks Grouped Badges (Unified Databricks Workspace Icons) -->
                 <div class="bg-white p-4 rounded-xl border border-slate-200/60 flex items-center gap-3">
-                    <i class="fas fa-hubspot text-orange-600 text-xl"></i>
+                    <i class="fas fa-layer-group text-orange-600 text-xl"></i>
                     <div>
                         <p class="text-sm font-bold text-slate-900">Databricks Associate</p>
                         <p class="text-xs text-slate-500">Data Engineer Associate[cite: 1]</p>
                     </div>
                 </div>
                 <div class="bg-white p-4 rounded-xl border border-slate-200/60 flex items-center gap-3">
-                    <i class="fas fa-hubspot text-orange-600 text-xl"></i>
+                    <i class="fas fa-layer-group text-orange-600 text-xl"></i>
                     <div>
                         <p class="text-sm font-bold text-slate-900">Databricks</p>
                         <p class="text-xs text-slate-500">Accredited Fundamentals[cite: 1]</p>
                     </div>
                 </div>
                 <div class="bg-white p-4 rounded-xl border border-slate-200/60 flex items-center gap-3">
-                    <i class="fas fa-hubspot text-orange-600 text-xl"></i>
+                    <i class="fas fa-layer-group text-orange-600 text-xl"></i>
                     <div>
                         <p class="text-sm font-bold text-slate-900">Databricks GenAI</p>
                         <p class="text-xs text-slate-500">Accredited Fundamentals[cite: 1]</p>
                     </div>
                 </div>
-                <!-- Modern Unified Platforms -->
-                <div class="bg-white p-4 rounded-xl border border-slate-200/60 flex items-center gap-3">
-                    <i class="fas fa-layer-group text-indigo-500 text-xl"></i>
+                <!-- Fabric Dynamic Highlights -->
+                <div class="bg-gradient-to-r from-orange-500/10 via-pink-500/10 to-blue-500/10 p-4 rounded-xl border border-orange-200 flex items-center gap-3">
+                    <i class="fas fa-chart-pie text-orange-600 text-xl"></i>
                     <div>
                         <p class="text-sm font-bold text-slate-900">DP-700 (Training)</p>
-                        <p class="text-xs text-slate-500">Microsoft Fabric Engineer[cite: 1]</p>
+                        <p class="text-xs text-slate-600">Microsoft Fabric Engineer[cite: 1]</p>
                     </div>
                 </div>
-                <!-- PowerBI Official Dashboard Setup -->
+                <!-- PowerBI Official Dashboard Icon -->
                 <div class="bg-white p-4 rounded-xl border border-slate-200/60 flex items-center gap-3">
-                    <i class="fas fa-chart-bar text-amber-500 text-xl"></i>
+                    <i class="fas fa-chart-column text-amber-500 text-xl"></i>
                     <div>
                         <p class="text-sm font-bold text-slate-900">Power BI</p>
                         <p class="text-xs text-slate-500">Level 1 & Level 2[cite: 1]</p>
@@ -286,22 +309,18 @@
             <!-- Personal Information Panel -->
             <section class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
                 <h3 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2"><i class="fas fa-globe text-blue-600"></i> Personal Information</h3>
-                <div class="grid grid-cols-2 gap-4 text-xs">
+                <div class="grid grid-cols-1 gap-3 text-xs">
                     <div>
-                        <span class="text-slate-400 block">Nationality</span>
-                        <span class="font-semibold text-slate-800">Indian[cite: 1]</span>
+                        <span class="text-slate-400 block font-medium">Nationality</span>
+                        <span class="font-semibold text-slate-800">Indian</span>
                     </div>
                     <div>
-                        <span class="text-slate-400 block">Marital Status</span>
-                        <span class="font-semibold text-slate-800">Single[cite: 1]</span>
+                        <span class="text-slate-400 block font-medium">Marital Status</span>
+                        <span class="font-semibold text-slate-800">Single</span>
                     </div>
                     <div>
-                        <span class="text-slate-400 block">Languages spoken</span>
-                        <span class="font-semibold text-slate-800">English, Hindi, Kannada[cite: 1]</span>
-                    </div>
-                    <div>
-                        <span class="text-slate-400 block">Work Status</span>
-                        <span class="font-semibold text-blue-600">Actively seeking GCC/UAE roles[cite: 1]</span>
+                        <span class="text-slate-400 block font-medium">Languages Spoken</span>
+                        <span class="font-semibold text-slate-800">English, Hindi, Kannada</span>
                     </div>
                 </div>
             </section>
