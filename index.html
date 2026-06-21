@@ -9,10 +9,10 @@
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-blue-500 selection:text-white">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-blue-500 selection:text-white flex flex-col min-h-screen">
 
     <!-- HERO / HEADER SECTION -->
-    <header class="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white py-20 px-6 shadow-xl relative overflow-hidden">
+    <header class="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white pt-16 pb-6 px-6 shadow-xl relative overflow-hidden">
         <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(59,130,246,0.1),transparent_50%)]"></div>
         <div class="max-w-5xl mx-auto relative z-10 md:flex justify-between items-center">
             <div>
@@ -30,23 +30,77 @@
                 <a href="tel:+918904197396" class="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-lg transition-all duration-200 transform hover:-translate-y-0.5 text-sm font-semibold shadow-lg shadow-emerald-600/20"><i class="fas fa-phone mr-2"></i>+91 8904197396</a>
             </div>
         </div>
+
+        <!-- SECTION NAVIGATION BUTTONS -->
+        <nav class="max-w-5xl mx-auto mt-12 relative z-10 border-t border-slate-800 pt-6">
+            <div class="flex flex-wrap gap-2 justify-start sm:justify-center">
+                <button onclick="switchPage('profile')" id="btn-profile" class="nav-btn bg-blue-600 text-white px-5 py-2.5 rounded-xl text-sm font-bold transition-all flex items-center gap-2 shadow-md">
+                    <i class="fas fa-user-tie"></i> Profile
+                </button>
+                <button onclick="switchPage('pipeline')" id="btn-pipeline" class="nav-btn bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white px-5 py-2.5 rounded-xl text-sm font-bold transition-all flex items-center gap-2">
+                    <i class="fas fa-project-diagram"></i> Architecture
+                </button>
+                <button onclick="switchPage('skills')" id="btn-skills" class="nav-btn bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white px-5 py-2.5 rounded-xl text-sm font-bold transition-all flex items-center gap-2">
+                    <i class="fas fa-tools"></i> Skills
+                </button>
+                <button onclick="switchPage('experience')" id="btn-experience" class="nav-btn bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white px-5 py-2.5 rounded-xl text-sm font-bold transition-all flex items-center gap-2">
+                    <i class="fas fa-briefcase"></i> Experience
+                </button>
+                <button onclick="switchPage('certs')" id="btn-certs" class="nav-btn bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white px-5 py-2.5 rounded-xl text-sm font-bold transition-all flex items-center gap-2">
+                    <i class="fas fa-award"></i> Certifications
+                </button>
+            </div>
+        </nav>
     </header>
 
-    <!-- MAIN BODY -->
-    <main class="max-w-5xl mx-auto px-6 py-12 space-y-12">
+    <!-- MAIN BODY PAGES CONTAINER -->
+    <main class="max-w-5xl w-full mx-auto px-6 py-12 flex-grow">
         
-        <!-- OBJECTIVE SUMMARY -->
-        <section class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 relative group transition-all duration-300 hover:shadow-md">
-            <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-3 border-b border-slate-100 pb-4 mb-4">
-                <i class="fas fa-user-tie text-blue-600"></i> Professional Profile
-            </h2>
-            <p class="text-slate-600 leading-relaxed text-base">
-                Dynamic IT professional with <strong>4+ years of experience</strong> specializing in data integration within Azure environments. Highly proficient in designing and developing robust Extract, Transform, Load (ETL) processes across diverse data architecture frameworks. Adept at metadata management, pipeline orchestration optimization, master data alignment, and collaborating closely with cross-functional global teams to deliver business value through scalable data models.
-            </p>
-        </section>
+        <!-- PAGE 1: PROFILE & PERSONAL INFO -->
+        <div id="page-profile" class="page-view space-y-8">
+            <section class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-3 border-b border-slate-100 pb-4 mb-4">
+                    <i class="fas fa-user-tie text-blue-600"></i> Professional Profile
+                </h2>
+                <p class="text-slate-600 leading-relaxed text-base">
+                    Dynamic IT professional with <strong>4+ years of experience</strong> specializing in data integration within Azure environments. Highly proficient in designing and developing robust Extract, Transform, Load (ETL) processes across diverse data architecture frameworks. Adept at metadata management, pipeline orchestration optimization, master data alignment, and collaborating closely with cross-functional global teams to deliver business value through scalable data models.
+                </p>
+            </section>
 
-        <!-- VISUAL PROJECT ARCHITECTURE DIAGRAM SECTION -->
-        <section class="space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Education -->
+                <section class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
+                    <h3 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2"><i class="fas fa-graduation-cap text-blue-600"></i> Education</h3>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm">Bachelor of Engineering</h4>
+                        <p class="text-xs text-slate-500">PES Institute of Technology And Management</p>
+                        <p class="text-xs text-slate-400 mt-1">Shivamogga, Karnataka | 2017 - 2021</p>
+                    </div>
+                </section>
+                
+                <!-- Personal Information Panel -->
+                <section class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
+                    <h3 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2"><i class="fas fa-globe text-blue-600"></i> Personal Information</h3>
+                    <div class="grid grid-cols-1 gap-3 text-xs">
+                        <div>
+                            <span class="text-slate-400 block font-medium">Nationality</span>
+                            <span class="font-semibold text-slate-800">Indian</span>
+                        </div>
+                        <div>
+                            <span class="text-slate-400 block font-medium">Marital Status</span>
+                            <span class="font-semibold text-slate-800">Single</span>
+                        </div>
+                        <div>
+                            <span class="text-slate-400 block font-medium">Languages Spoken</span>
+                            <span class="font-semibold text-slate-800">English, Hindi, Kannada</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- PAGE 2: ARCHITECTURE DIAGRAM -->
+        <div id="page-pipeline" class="page-view hidden space-y-4">
             <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-3 border-b border-slate-100 pb-4">
                 <i class="fas fa-project-diagram text-blue-600"></i> Featured Pipeline Architecture
             </h2>
@@ -56,21 +110,19 @@
                     <h3 class="text-xl md:text-2xl font-bold text-white mt-1">eTRAKiT to Salesforce — Data Migration</h3>
                     <p class="text-sm text-slate-400 mt-2">Production architecture showing on-premises transactional extraction layers migrating directly into scalable target cloud models.</p>
                 </div>
-
                 <!-- Embedded Architecture Diagram Source -->
                 <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 flex justify-center items-center">
                     <img src="Architecture/Salesforce_Muncipal.PNG" alt="eTRAKiT to Salesforce Data Migration Architecture Diagram" class="max-w-full h-auto rounded-lg shadow-md border border-slate-700/50">
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- SKILLS MATRIX -->
-        <section class="space-y-4">
+        <!-- PAGE 3: SKILLS MATRIX -->
+        <div id="page-skills" class="page-view hidden space-y-4">
             <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-3 border-b border-slate-100 pb-4">
                 <i class="fas fa-tools text-blue-600"></i> Technical Expertise
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
                     <h3 class="font-bold text-slate-900 text-lg mb-3 flex items-center"><i class="fas fa-route text-indigo-500 mr-2"></i>Data Pipeline & Orchestration</h3>
                     <div class="flex flex-wrap gap-2">
@@ -80,7 +132,6 @@
                         <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Azure Logic Apps</span>
                     </div>
                 </div>
-
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
                     <h3 class="font-bold text-slate-900 text-lg mb-3 flex items-center"><i class="fas fa-bolt text-amber-500 mr-2"></i>Data Processing & Analytics</h3>
                     <div class="flex flex-wrap gap-2">
@@ -90,7 +141,6 @@
                         <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Python</span>
                     </div>
                 </div>
-
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
                     <h3 class="font-bold text-slate-900 text-lg mb-3 flex items-center"><i class="fas fa-database text-emerald-500 mr-2"></i>Database & Cloud Storage</h3>
                     <div class="flex flex-wrap gap-2">
@@ -100,7 +150,6 @@
                         <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Delta Lake / One Lake</span>
                     </div>
                 </div>
-
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
                     <h3 class="font-bold text-slate-900 text-lg mb-3 flex items-center"><i class="fas fa-shield-halved text-blue-500 mr-2"></i>Governance & Quality</h3>
                     <div class="flex flex-wrap gap-2">
@@ -110,16 +159,14 @@
                         <span class="bg-slate-100 text-slate-800 text-xs font-medium px-3 py-1.5 rounded-md border border-slate-200">Master Data (MDM)</span>
                     </div>
                 </div>
-
             </div>
-        </section>
+        </div>
 
-        <!-- PROFESSIONAL EXPERIENCE -->
-        <section class="space-y-6">
+        <!-- PAGE 4: PROFESSIONAL EXPERIENCE -->
+        <div id="page-experience" class="page-view hidden space-y-6">
             <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-3 border-b border-slate-100 pb-4">
                 <i class="fas fa-briefcase text-blue-600"></i> Career History
             </h2>
-            
             <!-- Job 1 -->
             <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100 relative group transition-all">
                 <div class="flex flex-wrap justify-between items-start gap-4">
@@ -136,7 +183,6 @@
                     <li>Engineered custom Python-based file processing and ingestion automation runbooks to successfully stream municipal structural records and historical document frameworks right into Salesforce instances.</li>
                 </ul>
             </div>
-
             <!-- Job 2 -->
             <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100 relative group transition-all">
                 <div class="flex flex-wrap justify-between items-start gap-4">
@@ -153,7 +199,6 @@
                     <li>Coordinated with Agile DevOps release squads to manage stable execution tracking environments, orchestrating automated pipeline scripts through centralized GitHub repository operations.</li>
                 </ul>
             </div>
-
             <!-- Job 3 -->
             <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100 relative group transition-all">
                 <div class="flex flex-wrap justify-between items-start gap-4">
@@ -169,15 +214,14 @@
                     <li>Automated low-latency scheduling jobs through shell scripting protocols, abstracting processing layers away from routine manual execution dependencies.</li>
                 </ul>
             </div>
-        </section>
+        </div>
 
-        <!-- CERTIFICATIONS -->
-        <section class="space-y-4">
+        <!-- PAGE 5: CERTIFICATIONS -->
+        <div id="page-certs" class="page-view hidden space-y-4">
             <h2 class="text-2xl font-bold text-slate-900 flex items-center gap-3 border-b border-slate-100 pb-4">
                 <i class="fas fa-award text-blue-600"></i> Credentials & Certifications
             </h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                <!-- AZ-900 -->
                 <div class="bg-white p-4 rounded-xl border border-slate-200/60 flex items-center gap-3">
                     <img src="Logos/az-900_badge.png" class="w-9 h-9 object-contain" alt="AZ-900 Badge">
                     <div>
@@ -185,7 +229,6 @@
                         <p class="text-xs text-slate-500">Azure Fundamentals</p>
                     </div>
                 </div>
-                <!-- DP-900 -->
                 <div class="bg-white p-4 rounded-xl border border-slate-200/60 flex items-center gap-3">
                     <img src="Logos/dp-900_badge.png" class="w-9 h-9 object-contain" alt="DP-900 Badge">
                     <div>
@@ -193,7 +236,6 @@
                         <p class="text-xs text-slate-500">Azure Data Fundamentals</p>
                     </div>
                 </div>
-                <!-- Fabric DP-700 -->
                 <div class="bg-white p-4 rounded-xl border border-slate-200/60 flex items-center gap-3">
                     <img src="Logos/Fabric-logo.png" class="w-9 h-9 object-contain" alt="Microsoft Fabric Logo">
                     <div>
@@ -201,7 +243,6 @@
                         <p class="text-xs text-slate-500">Microsoft Fabric Engineer (Training)</p>
                     </div>
                 </div>
-                <!-- Databricks Fundamentals -->
                 <div class="bg-white p-4 rounded-xl border border-slate-200/60 flex items-center gap-3">
                     <img src="Logos/databricks-logo.png" class="w-9 h-9 object-contain" alt="Databricks Logo">
                     <div>
@@ -209,7 +250,6 @@
                         <p class="text-xs text-slate-500">Academy Accredited Fundamentals</p>
                     </div>
                 </div>
-                <!-- Databricks GenAI -->
                 <div class="bg-white p-4 rounded-xl border border-slate-200/60 flex items-center gap-3">
                     <img src="Logos/databricks-logo.png" class="w-9 h-9 object-contain" alt="Databricks Logo">
                     <div>
@@ -217,7 +257,6 @@
                         <p class="text-xs text-slate-500">Accredited Generative AI Fundamentals</p>
                     </div>
                 </div>
-                <!-- Databricks Associate -->
                 <div class="bg-white p-4 rounded-xl border border-slate-200/60 flex items-center gap-3">
                     <img src="Logos/databricks-logo.png" class="w-9 h-9 object-contain" alt="Databricks Logo">
                     <div>
@@ -225,7 +264,6 @@
                         <p class="text-xs text-slate-500">Data Engineer Associate</p>
                     </div>
                 </div>
-                <!-- PowerBI -->
                 <div class="bg-white p-4 rounded-xl border border-slate-200/60 flex items-center gap-3">
                     <img src="Logos/power-bi_logo.png" class="w-9 h-9 object-contain" alt="Power BI Logo">
                     <div>
@@ -233,7 +271,6 @@
                         <p class="text-xs text-slate-500">Level 1 & Level 2</p>
                     </div>
                 </div>
-                <!-- Github Copilot -->
                 <div class="bg-white p-4 rounded-xl border border-slate-200/60 flex items-center gap-3">
                     <img src="Logos/github-copilot_logo.jpg" class="w-9 h-9 object-contain" alt="GitHub Copilot Logo">
                     <div>
@@ -242,47 +279,42 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- EDUCATION & MISC -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <!-- Education -->
-            <section class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
-                <h3 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2"><i class="fas fa-graduation-cap text-blue-600"></i> Education</h3>
-                <div>
-                    <h4 class="font-bold text-slate-800 text-sm">Bachelor of Engineering</h4>
-                    <p class="text-xs text-slate-500">PES Institute of Technology And Management</p>
-                    <p class="text-xs text-slate-400 mt-1">Shivamogga, Karnataka | 2017 - 2021</p>
-                </div>
-            </section>
-            
-            <!-- Personal Information Panel -->
-            <section class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
-                <h3 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2"><i class="fas fa-globe text-blue-600"></i> Personal Information</h3>
-                <div class="grid grid-cols-1 gap-3 text-xs">
-                    <div>
-                        <span class="text-slate-400 block font-medium">Nationality</span>
-                        <span class="font-semibold text-slate-800">Indian</span>
-                    </div>
-                    <div>
-                        <span class="text-slate-400 block font-medium">Marital Status</span>
-                        <span class="font-semibold text-slate-800">Single</span>
-                    </div>
-                    <div>
-                        <span class="text-slate-400 block font-medium">Languages Spoken</span>
-                        <span class="font-semibold text-slate-800">English, Hindi, Kannada</span>
-                    </div>
-                </div>
-            </section>
         </div>
 
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-slate-950 text-slate-500 text-center py-12 text-sm border-t border-slate-900 mt-20">
+    <footer class="bg-slate-950 text-slate-500 text-center py-12 text-sm border-t border-slate-900 mt-auto">
         <p class="font-medium text-slate-400">&copy; 2026 Prajwal V M. All Rights Reserved.</p>
         <p class="text-xs text-slate-600 mt-1">Built with semantic HTML5 & Tailwind CSS.</p>
     </footer>
+
+    <!-- INTERACTIVE NAVIGATION SCRIPT -->
+    <script>
+        function switchPage(pageId) {
+            // Hide all sub-pages completely
+            document.querySelectorAll('.page-view').forEach(view => {
+                view.classList.add('hidden');
+            });
+            
+            // Uncover selected page view
+            document.getElementById('page-' + pageId).classList.remove('hidden');
+            
+            // Reset state styling on all control buttons
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('bg-blue-600', 'text-white', 'shadow-md');
+                btn.classList.add('bg-slate-800', 'text-slate-300', 'hover:bg-slate-700', 'hover:text-white');
+            });
+            
+            // Set dynamic highlighted active style onto clicked tab indicator
+            const activeBtn = document.getElementById('btn-' + pageId);
+            activeBtn.classList.remove('bg-slate-800', 'text-slate-300', 'hover:bg-slate-700', 'hover:text-white');
+            activeBtn.classList.add('bg-blue-600', 'text-white', 'shadow-md');
+            
+            // Smoothly auto-scroll browser window down directly to main viewing layout
+            window.scrollTo({ top: document.querySelector('nav').offsetTop + 80, behavior: 'smooth' });
+        }
+    </script>
 
 </body>
 </html>
